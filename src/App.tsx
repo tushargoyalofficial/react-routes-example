@@ -1,11 +1,11 @@
 import React from "react";
-import Login from "./containers/Login";
-import Sidebar from "./containers/Sidebar";
+import StackRoutes from "./routes/StackRoutes";
 
 const App: React.FC = () => {
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      <Sidebar />
+      {/* All stack routes (unprotected) will render here */}
+      <StackRoutes />
     </div>
   );
 };
