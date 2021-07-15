@@ -3,7 +3,7 @@ import { RouteComponentProps } from "react-router-dom";
 
 interface IProps extends RouteComponentProps {}
 
-const Signup: React.FC<IProps> = (props: IProps) => (
+const Users: React.FC<IProps> = (props: IProps) => (
   <div
     style={{
       position: "absolute",
@@ -13,16 +13,9 @@ const Signup: React.FC<IProps> = (props: IProps) => (
       textAlign: "center",
     }}
   >
-    <h2>Welcome to Signup Screen</h2>
-    <p>Here user will register himself</p>
-    <button
-      onClick={() => {
-        props.history.push("/drawer");
-      }}
-    >
-      DASHBOARD
-    </button>
+    <h2>Welcome to Users Screen</h2>
+    <p>Here users list will be shown.</p>
   </div>
 );
 
-export default Signup;
+export default Users;
