@@ -18,7 +18,7 @@ const stackRoutes: IStackRoutes[] = [
   { path: "/", exact: true, main: Login, id: nanoid() },
   { path: "/signup", exact: true, main: Signup, id: nanoid() },
   {
-    path: "/drawer",
+    path: "/drawer", // add this as initial for inside pages of drawer
     exact: false,
     main: Sidebar,
     id: nanoid(),
