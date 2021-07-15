@@ -1,17 +1,13 @@
 import * as React from "react";
-import {
-  Switch,
-  Route,
-  BrowserRouter as Router,
-  Redirect,
-} from "react-router-dom";
+import { Switch, Route, Router, Redirect } from "react-router-dom";
 import drawerRoutes from "./configs/drawerRoutes";
+import history from "../config/history";
 
 const DrawerRoutes: React.FC = () => {
   const isAuthenticated: boolean = true;
 
   return (
-    <Router>
+    <Router history={history}>
       <Switch>
         {drawerRoutes.map((r) => (
           <Route

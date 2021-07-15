@@ -1,3 +1,4 @@
+import DrawerRoutes from "./DrawerRoutes";
 import StackRoutes from "./StackRoutes";
 
-export default StackRoutes;
+export { StackRoutes, DrawerRoutes };

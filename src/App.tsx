@@ -1,5 +1,5 @@
 import React from "react";
-import StackRoutes from "./routes";
+import { StackRoutes } from "./routes";
 
 const App: React.FC = () => {
   return (

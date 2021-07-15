@@ -1,7 +1,10 @@
 import * as React from "react";
-import DrawerRoutes from "../routes/DrawerRoutes";
+import { DrawerRoutes } from "../routes";
+import { NavLink, RouteComponentProps } from "react-router-dom";
 
-const Sidebar: React.FC = () => {
+interface IProps extends RouteComponentProps {}
+
+const Sidebar: React.FC<IProps> = (props: IProps) => {
   return (
     <div
       style={{
@@ -16,17 +19,23 @@ const Sidebar: React.FC = () => {
           <li
             style={{ padding: "12px", fontWeight: 600, listStyleType: "none" }}
           >
-            Users
+            <NavLink to={"/drawer/users"} exact={true}>
+              Users
+            </NavLink>
           </li>
           <li
             style={{ padding: "12px", fontWeight: 600, listStyleType: "none" }}
           >
-            Books
+            <NavLink to={"/drawer/books"} exact={true}>
+              Books
+            </NavLink>
           </li>
           <li
             style={{ padding: "12px", fontWeight: 600, listStyleType: "none" }}
           >
-            Settings
+            <NavLink to={"/drawer/settings"} exact>
+              Settings
+            </NavLink>
           </li>
         </ul>
       </div>
