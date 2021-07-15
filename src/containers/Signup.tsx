@@ -17,7 +17,7 @@ const Signup: React.FC<IProps> = (props: IProps) => (
     <p>Here user will register himself</p>
     <button
       onClick={() => {
-        props.history.push("/drawer");
+        props.history.push("/drawer/users");
       }}
     >
       DASHBOARD
