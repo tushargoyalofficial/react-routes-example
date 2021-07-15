@@ -1,6 +1,7 @@
 import * as React from "react";
+import DrawerRoutes from "../routes/DrawerRoutes";
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <div
       style={{
@@ -32,19 +33,7 @@ const Sidebar = () => {
 
       {/* Main drawer rernder section */}
       <div style={{ flex: 4, backgroundColor: "#fdfdfd" }}>
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "60%",
-            transform: "translate(-50%, -50%)",
-            textAlign: "center",
-          }}
-        >
-          <h2>Welcome to Login Screen</h2>
-          <p>Here user will authenticate himself</p>
-          <button onClick={() => {}}>SIGNUP</button>
-        </div>
+        <DrawerRoutes />
       </div>
       {/* Main drawer rernder section */}
     </div>
