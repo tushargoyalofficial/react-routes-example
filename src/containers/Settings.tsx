@@ -8,7 +8,7 @@ const Settings: React.FC<IProps> = (props: IProps) => (
     style={{
       position: "absolute",
       top: "50%",
-      left: "50%",
+      left: "60%",
       transform: "translate(-50%, -50%)",
       textAlign: "center",
     }}
