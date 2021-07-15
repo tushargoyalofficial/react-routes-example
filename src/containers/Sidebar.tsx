@@ -6,8 +6,8 @@ const Sidebar = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        height: "100vh",
-        width: "100vw",
+        height: "90vh",
+        // width: "100vw",
       }}
     >
       <div style={{ flex: 1, backgroundColor: "#ededed" }}>
